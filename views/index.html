@@ -1,128 +1,92 @@
-<html><head><base href="https://web-resume.ai/" /><title>Web Resume - Create Professional Resumes in Minutes</title><style>
-  body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    height: 100%;
-    color: #ffffff;
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    text-align: center;
-    padding: 0 20px;
-  }
-  h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-  }
-  p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin-bottom: 2rem;
-    line-height: 1.6;
-  }
-  .cta-button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.2rem;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  }
-  .cta-button:hover {
-    background-color: #45a049;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
-  }
-  .features {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 800px;
-    margin-top: 3rem;
-  }
-  .feature {
-    background-color: rgba(255,255,255,0.1);
-    padding: 1.5rem;
-    border-radius: 10px;
-    width: 30%;
-    backdrop-filter: blur(10px);
-  }
-  .feature h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-  }
-  .feature p {
-    font-size: 0.9rem;
-  }
-  @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0px); }
-  }
-  .floating-resume {
-    position: absolute;
-    top: 10%;
-    right: 10%;
-    width: 200px;
-    height: 280px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    animation: float 6s ease-in-out infinite;
-  }
-  .floating-resume::before {
-    content: '';
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    height: 30px;
-    background-color: #ddd;
-    border-radius: 5px;
-  }
-  .floating-resume::after {
-    content: '';
-    position: absolute;
-    top: 70px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    background-color: #eee;
-    border-radius: 5px;
-  }
-</style></head><body>
-  <div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color:#0ad31e;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            color:#a6ff02;
+            padding:0.5rem;
+            font-family: "Quicksand", sans-serif;
+        }
+
+        div>p{
+            color: #F3FF90;
+            max-width: 15rem;
+        }
+        h1{
+            font-size: 5rem;
+            padding: 2rem;
+            font-family: "Playwrite HU", cursive;
+        }
+        p{
+            font-size: 1.5rem;
+            max-width: 80VW;
+        }
+
+        button{
+            padding: 1rem 2.5rem;
+            font-size: 2rem;
+            background-color: #02b079;
+            border:none;
+            border-radius:4rem;
+            color:#F3FF90;
+            margin:30px;
+            font-family: "Playwrite HU", cursive;
+        }
+
+        .feature_card{
+            display:flex;
+            align-items: center;
+            justify-content: space-around;
+            padding:15px;
+
+            background-color:#05ff1ea1;
+            border-radius:80px;
+        }
+        .feature_card>div{
+            padding:20px;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            background-color: chocolate;
+            margin: 1.5rem;
+        }
+        h2{
+            font-size: 2rem;
+            color: rgb(10, 72, 188);
+            margin:0 0 10px 0 ;
+        }
+        .feature_card p{
+            max-width: 100%;
+        }
+    </style>
+    <title>RESUME GENERATOR</title>
+</head>
+<body>
     <h1>Web Resume</h1>
     <p>Create stunning, professional resumes in minutes. Stand out from the crowd and land your dream job with our easy-to-use resume builder.</p>
-    <a href="/create" class="cta-button">Create Your Resume Now</a>
-    <div class="features">
-      <div class="feature">
-        <h3>Professional Templates</h3>
-        <p>Choose from a variety of ATS-friendly designs.</p>
-      </div>
-      <div class="feature">
-        <h3>Easy Customization</h3>
-        <p>Tailor your resume with our intuitive editor.</p>
-      </div>
-      <div class="feature">
-        <h3>Instant Download</h3>
-        <p>Get your resume in PDF format immediately.</p>
-      </div>
+    <button>Create Your Resume Now</button>
+    <div class="feature_card">
+        <div><h2>Professional Templates</h1><p>Choose from a variety of ATS-friendly designs.</p></div>
+        <div><h2>Easy Customization</h1><p>Tailor your resume with our intuitive editor.</p></div>
+        <div><h2>Instant Download</h1><p>Get your resume in PDF format immediately.</p></div> 
     </div>
-  </div>
-  <div class="floating-resume"></div>
-</body></html>
+</body>
+</html>
