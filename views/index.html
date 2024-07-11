@@ -7,8 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <style>
         *{
@@ -16,18 +14,54 @@
             padding:0;
         }
         body{
-            background-color:#0ad31e;
+            background-color:rgb(0, 159, 189);
             display:flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
-            color:#a6ff02;
+            color:#f9fbf6;
             padding:0.5rem;
             font-family: "Quicksand", sans-serif;
+            /* Add running stripes animation */
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 50%, transparent 50%);
+            background-size: 100% 30px;
+            background-position: 0% 100%;
+            animation: run-stripes 3s infinite;
         }
-
+        @keyframes run-stripes {
+            0% {
+                background-position: 0% 100%;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+        /* Add animated gradient background */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(30deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+            background-size: 300% 300%;
+            animation: color 10s ease-in-out infinite;
+            z-index: -1;
+        }
+        @keyframes color {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
         div>p{
-            color: #F3FF90;
+            color: #111111;
             max-width: 15rem;
         }
         h1{
@@ -39,43 +73,42 @@
             font-size: 1.5rem;
             max-width: 80VW;
         }
-
         button{
             padding: 1rem 2.5rem;
             font-size: 2rem;
-            background-color: #02b079;
+            background-color: #fcfcfc;
             border:none;
             border-radius:4rem;
-            color:#F3FF90;
+            color:#000000;
             margin:30px;
             font-family: "Playwrite HU", cursive;
         }
         button:hover{
-            background-color:#038f62 ;
+            background-color:#b2bdba ;
         }
-        .feature_card{
+       .feature_card{
             display:flex;
             align-items: center;
             justify-content: space-around;
             padding:15px;
-
-            background-color:#05ff1ea1;
+            background-color:#d4d4d4;
             border-radius:80px;
         }
-        .feature_card>div{
+       .feature_card>div{
             padding:20px;
             display: flex;
             flex-direction: column;
             align-items:center;
-            background-color: chocolate;
+            background-color: rgb(255, 255, 255);
             margin: 1.5rem;
+            border-radius:3rem;
         }
         h2{
             font-size: 2rem;
-            color: rgb(10, 72, 188);
+            color: rgb(0, 0, 0);
             margin:0 0 10px 0 ;
         }
-        .feature_card p{
+       .feature_card p{
             max-width: 100%;
         }
     </style>
@@ -86,9 +119,9 @@
     <p>Create stunning, professional resumes in minutes. Stand out from the crowd and land your dream job with our easy-to-use resume builder.</p>
     <button>Create Your Resume Now</button>
     <div class="feature_card">
-        <div><h2>Professional Templates</h1><p>Choose from a variety of ATS-friendly designs.</p></div>
-        <div><h2>Easy Customization</h1><p>Tailor your resume with our intuitive editor.</p></div>
+        <div><h2>Professional Templates</h2><p>Choose from a variety of ATS-friendly designs.</p></div>
+        <div><h2>Easy Customization</h2><p>Tailor your resume with our intuitive editor.</p></div>
         <div><h2>Instant Download</h1><p>Get your resume in PDF format immediately.</p></div> 
-    </div>
-</body>
-</html>
+        </div>
+    </body>
+    </html>
