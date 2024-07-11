@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        body{
+            padding: 2rem;
+            background-color:#0ad31e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card{
+            background-color: #05ff1ed5;
+            width: 50vw;
+            padding:2.5vh 2.5vw;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border-radius: 40px;
+        }
+        .card > div{
+            display: flex;
+            flex-direction: column;
+        }
+        h1{
+            font-family: "Playwrite HU", cursive;
+            font-size: 3rem;
+            align-self: center;
+            margin: 15px;
+            color: rgb(10, 72, 188);
+        }
+        label{
+            font-size: 1.4rem;
+            margin: 5px;
+            color:#F3FF90;
+            font-weight: bold;
+        }
+        input{
+            width: 50vw;
+            height: 25px;
+            margin-bottom:10px;
+            background-color: rgb(218, 218, 218);
+            border:2px solid blue;
+            border-radius: 10px;
+        }
+
+        #Experience,#Additional{
+            height:30vh;
+        }
+        .Multiple-fields{
+            display: flex;
+            
+        }
+
+        .Multiple-fields div{
+            display: flex;
+            flex-direction:column;
+            margin:0 5px;
+        }
+        .Multiple-fields input{
+            width: 24.5vw;
+        }
+        .submit-button{
+            width:50vw;
+            display: flex;
+            justify-content: center;
+        }
+        .submit-button *{
+            font-family: "Playwrite HU", cursive;
+        }
+        input[type="submit"]{
+            width: 20vw;
+            height: 3rem;
+            font-size: 1.3rem;
+            background-color: #02b079;
+            border:none;
+            border-radius: 2rem;
+            margin:1.5rem 0;
+        }
+        input[type="submit"]:hover{
+            background-color:#038f62 ;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Generate Your Resume</h1>
+        <form method="POST" action="/submit">   <!--Add Other Attributes-->
+            <div class="full-width">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required />
+            </div>
+            <div class="full-width">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div class="full-width">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="full-width">
+                <label for="address">city</label>
+                <input type="text" id="address" name="address" required />
+            </div>
+            <div class="Multiple-fields">
+                <div class="Education">
+                    <label for="Education">Education</label><!--used different IDs for input Tags--> 
+                    <input type="text" id="Education1">     <!--Use specific ids in BackEnd  &  JS-->
+                    <input type="text" id="Education2">
+                    <input type="text" id="Education3">
+                    <input type="text" id="Education4">
+
+                </div>
+                <div class="Skills">
+                    <label for="Skills">Skills</label>      <!--used different IDs for input Tags-->
+                    <input type="text" id="Skills1">        <!--Use specific ids in BackEnd  &  JS-->
+                    <input type="text" id="Skills2">
+                    <input type="text" id="Skills3">
+                    <input type="text" id="Skills4">
+                </div>
+            </div>
+            <div>
+                <label for="Experience">Work Experience</label>
+                <input type="text" id="Experience"></input>
+            </div>
+            <div>
+                <label for="Additional">Additional Info</label>
+                <input type="text" id="Additional"></input>
+            </div>
+            <div class="submit-button">
+                <input type="submit" value="Create Your Resume Now">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
