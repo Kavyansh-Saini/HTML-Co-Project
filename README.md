@@ -14,8 +14,8 @@ Welcome to the Web Resume Project! This repository contains the source code for 
 ### Home Page
 ![Home Page](assets/images/home-page.png)
 
-### Skills Section
-![Skills Section](assets/images/skills-section.png)
+### Form
+![Form](assets/images/form.png)
 
 ### Projects Section
 ![Projects Section](assets/images/projects-section.png)
