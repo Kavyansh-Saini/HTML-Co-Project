@@ -40,11 +40,11 @@ Welcome to the Web Resume Project! This repository contains the source code for 
     ```bash
     cd HTML-Co-Project
    ```
-   
+
 3. **Install dependencies:**
 
    ```bash
-   npm ejs
+   npm i ejs
    ```
 4. **Run the server:**
 
