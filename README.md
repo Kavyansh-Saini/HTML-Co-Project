@@ -23,7 +23,7 @@ Welcome to the Web Resume Project! This repository contains the source code for 
 ## Technologies Used
 
 - **Frontend**: HTML, Javascript
-- **Backend**: Node.js
+- **Backend**: EJS
 - **Styling**: CSS
 
 ## Installation
