@@ -26,3 +26,27 @@ Welcome to the Web Resume Project! This repository contains the source code for 
 - **Frontend**: HTML, Javascript
 - **Backend**: Node.js
 - **Styling**: CSS
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Kavyansh-Saini/HTML-Co-Project
+   cd culinary-corner
+   ```
+
+2. **Navigate to the project directory::**
+
+    cd HTML-Co-Project
+
+3. **Install dependencies:**
+
+   ```bash
+   npm ejs
+   ```
+4. **Run the server:**
+
+   ```bash
+   nodemon server.js
+   ```
