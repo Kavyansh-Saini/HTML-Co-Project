@@ -20,7 +20,6 @@ Welcome to the Web Resume Project! This repository contains the source code for 
 
 ## Features
 
-
 ## Technologies Used
 
 - **Frontend**: HTML, Javascript
