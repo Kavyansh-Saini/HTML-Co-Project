@@ -32,7 +32,6 @@ Welcome to the Web Resume Project! This repository contains the source code for 
 
    ```bash
    git clone git@github.com:Kavyansh-Saini/HTML-Co-Project.git
-   cd culinary-corner
    ```
 
 2. **Navigate to the project directory::**
