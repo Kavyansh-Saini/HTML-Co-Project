@@ -6,6 +6,7 @@ Welcome to the Web Resume Project! This repository contains the source code for 
 
 - [Screenshots](#screenshots)
 - [Features](#features)
+- [Technologies Used](#technologies-Used)
 
 
 ## Screenshots
