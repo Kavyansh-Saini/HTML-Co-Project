@@ -50,3 +50,4 @@ Welcome to the Web Resume Project! This repository contains the source code for 
    ```bash
    nodemon server.js
    ```
+The web resume will be available at `http://localhost:3000`.
